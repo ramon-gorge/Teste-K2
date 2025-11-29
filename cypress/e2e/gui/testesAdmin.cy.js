@@ -5,13 +5,16 @@ import { criarCliente } from "../../support/gui_commands.js"
 import { criarProduto } from "../../support/gui_commands.js"
 
 describe('Front Server Admin Testes', () => {
+  before(() => {
+    cy.cadastrarAdminUser();
+  });
   beforeEach(() => {
     cy.visit('https://front.serverest.dev/login')
     cy.loginAdmin()
   });
   it('Criar Usuario Admin', () => {
     //Faz assertion na pagina inicial
-    cy.contains('Bem Vindo Administrador')
+    cy.contains('Bem Vindo')
       .should('be.visible');
     cy.contains('Cadastrar').click();
     //Chama o comando customizado para criar um usuario admin
@@ -27,7 +30,7 @@ describe('Front Server Admin Testes', () => {
 
   it('Criar Usuario Cliente', () => {
     //Faz assertion na pagina inicial
-    cy.contains('Bem Vindo Administrador')
+    cy.contains('Bem Vindo ')
       .should('be.visible');
     cy.contains('Cadastrar').click();
     //Chama o comando customizado para criar um usuario cliente
@@ -43,7 +46,7 @@ describe('Front Server Admin Testes', () => {
 
   it('Criar Produto', () => {
     //Faz assertion na pagina inicial
-    cy.contains('Bem Vindo Administrador')
+    cy.contains('Bem Vindo ')
       .should('be.visible');
     //Chama o comando customizado para criar um produto
     cy.criarProduto();

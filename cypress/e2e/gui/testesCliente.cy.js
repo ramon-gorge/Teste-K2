@@ -1,6 +1,9 @@
 import { addProduto } from "../../support/gui_commands.js"
 
 describe('Front Server Cliente Testes', () => {
+    before(() => {
+        cy.cadastrarCliente();
+    });
     beforeEach(() => {
         cy.visit('https://front.serverest.dev/login');
         cy.loginUser();
