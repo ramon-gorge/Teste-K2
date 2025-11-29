@@ -26,8 +26,17 @@ Siga os passos abaixo para clonar o repositório e instalar as dependências:
     ```
 3.  **Instale as dependências:**
     ```bash
-    npm install
+    npm install cypress --save-dev
     ```
+    
+    ```bash
+    npm install @faker-js/faker --save-dev
+    ```
+    
+    ```bash
+    npm i cypress-plugin-api
+    ```
+    
 
 ## Executar os Testes
 
