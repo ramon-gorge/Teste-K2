@@ -12,6 +12,11 @@ describe('Front Server Admin Testes', () => {
     cy.visit('https://front.serverest.dev/login')
     cy.loginAdmin()
   });
+
+  afterEach(() => {
+    cy.logout()
+  });
+  
   it('Criar Usuario Admin', () => {
     //Faz assertion na pagina inicial
     cy.contains('Bem Vindo')

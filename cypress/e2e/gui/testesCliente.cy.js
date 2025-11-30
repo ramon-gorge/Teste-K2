@@ -17,5 +17,6 @@ describe('Front Server Cliente Testes', () => {
         cy.addProduto();
         cy.contains('Serverest Store')
             .should('be.visible');
+        cy.logout();
     });
 });

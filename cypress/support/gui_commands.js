@@ -125,3 +125,8 @@ Cypress.Commands.add('addProduto', () => {
             .should('be.visible');
         cy.contains('Página Inicial').click();
 });
+
+Cypress.Commands.add('logout', () => {
+    cy.contains('Logout').click();
+    cy.contains('Login').should('be.visible');
+})
