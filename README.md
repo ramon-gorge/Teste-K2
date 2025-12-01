@@ -2,15 +2,16 @@
 
 ## Descrição do Projeto
 
-Este repositório contém um conjunto de testes de automação de API e WEB do Serverest.
+Este repositório contém um conjunto de testes de automação de API e WEB do Serverest, para o processo seletivo da empresa K2.
 
 
 ## Pré-requisitos
 
-Para rodar este projeto localmente, você precisará ter o Node.js e o npm instalados em sua máquina.
+Para rodar este projeto localmente, você precisará ter o Node.js, npm e Cypress instalados em sua máquina.
 
-  * **Node.js**: Recomenda-se a versão LTS.
-  * **npm**: Instalado juntamente com o Node.js.
+  * **Node.js**: v22.15.0.
+  * **npm**: 10.9.2.
+  * **Cypress**: v15.7.0.
 
 ## Instalação
 
@@ -40,7 +41,7 @@ Siga os passos abaixo para clonar o repositório e instalar as dependências:
 
 ## Executar os Testes
 
-Os testes podem ser executatos via interface gráfica ou headless.
+Os testes podem ser executatos através da interface gráfica ou do modo headless.
 
 ### 1\. Execução Interface Gráfica
 
